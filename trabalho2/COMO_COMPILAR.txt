@@ -1,0 +1,4 @@
+No terminal do linux:
+
+ g++ main.cpp ArvoreBinaria.cpp -o programa
+ ./programa
