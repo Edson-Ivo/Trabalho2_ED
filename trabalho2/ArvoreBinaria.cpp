@@ -87,8 +87,10 @@ NoArv* arv_cria_base_array(int *v, int tam) {
 
         campos=n_folhas;
         for(int y=0;y<tam;y++){
-            if(arvore[altura][y]->chave==menor)
+            if(arvore[altura][y]->chave==menor){
                 arvore[altura][y]->chave=maior;
+                break;
+                }
         }
 
         for(int i=altura;i>=0;i--) // altura=3, cont=1, campos=8, n_folhas=8, j=2, i = 0;    
