@@ -8,7 +8,7 @@ NoArv* arv_criavazia(); // cria arvore vazia
 
 NoArv* arv_cria(int chave, NoArv* esq, NoArv* dir);
 
-NoArv* arv_cria_base_array(int *v,int tam);
+int* arv_cria_base_array1(int v[],int tam);// Cria uma arvore e coloca em um arq.txt
 
 bool arv_vazia(NoArv* no); // arvore enraizada em no esta vazia?
 
