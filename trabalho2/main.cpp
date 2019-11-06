@@ -15,14 +15,14 @@ int main() {
     ofstream arquivo_saida;
     int cont=1;
 
-    int tam = 0;
-    arquivo_entrada.open("entrada.txt");
-    arquivo_saida.open("ordenados.txt");    
-    while(getline(arquivo_entrada, line)){
-        stringstream ss(line);
-        ss >> tam;
+    int tam = 0; // variável que irá receber o valor do tamanho do vetor
+    arquivo_entrada.open("entrada.txt"); // vai abrir o "entrada.txt"
+    arquivo_saida.open("ordenados.txt");    // vai abrir o "ordenados.txt"
+    while(getline(arquivo_entrada, line)){ // vai rodar linha por linha do arquivo_entrada
+        stringstream ss(line);// variavel que recebe os valores da linha
+        ss >> tam; //  tam recebe os valores da linha ss
 
-        if(tam == 0){
+        if(tam == 0){ // caso na linha tenha o valor 0, ele encerra o loop
             arquivo_entrada.close();
             break;
         }
